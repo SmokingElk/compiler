@@ -1,26 +1,9 @@
-function int16 calcGCD (int16 a, int16 b) {
-    while (a != b) {
-        bool flag = 0;
-        if (a > b) {
-            a = a - b;
-            flag = 1;
-        }
-
-        if (a < b && !flag) {
-            b = b - a;
-        }
-    }
-
-    return a;
-}
-
 function int16 main () {
-    int16 number1 = 18;
-    int16 number2 = 48;
-    int16 number3 = 36;
+    int16 a = 1;
+    int16 b = 2;
 
-    int16 gcd = calcGCD(number1, calcGCD(number2, number3));
+    int16 res = a + b;
 
-    @gcd;
+    @res;
     return;
 }
