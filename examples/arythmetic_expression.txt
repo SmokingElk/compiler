@@ -1,0 +1,11 @@
+function int16 main () {
+    int16 a = 1;
+    int16 b = 2;
+    int16 c = 3;
+
+    int16 res = a - (b + 2) + c + 1;
+
+    @res;
+
+    return;
+}

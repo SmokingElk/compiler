@@ -1,0 +1,14 @@
+function int16 main () {
+    int16 a = 20;
+    int16 b = 6;
+
+    int16 div = 0;
+
+    while (a > b) {
+        a = a - b;
+        div = div + 1;         
+    }
+
+    @div;
+    return;
+}

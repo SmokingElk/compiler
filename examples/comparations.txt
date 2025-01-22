@@ -1,0 +1,29 @@
+function int16 mult (int16 a, int16 b) {
+    int16 product = 0;
+
+    int16 i = 0;
+    while (i < b) {
+        product = product + a;
+        i = i + 1;
+    }
+
+    return product;
+}
+
+function int16 main () {
+    int16 a = 5;
+    int16 b = 6;
+
+    int16 res = 0;
+
+    res = res + mult(a == b, 1);
+    res = res + mult(a != b, 2);
+    res = res + mult(a < b, 4);
+    res = res + mult(a <= b, 8);
+    res = res + mult(a > b, 16);
+    res = res + mult(a >= b, 32);
+
+    @res;
+
+    return;
+}

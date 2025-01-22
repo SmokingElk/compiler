@@ -1,0 +1,10 @@
+function int16 main () {
+    bool a = 1;
+    bool b = 1;
+    bool c = 0;
+
+    bool res = a && !b || c && (1 || 0);
+    @res;
+
+    return 0;
+}
